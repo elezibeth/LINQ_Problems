@@ -12,10 +12,28 @@ namespace PracticeProblemsLINQ
         {
             //Problem 1
             List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+            List<string> wordsWithTh = LinqProblems.RunProblem1(words);
+            foreach(string word in wordsWithTh)
+            {
+                Console.WriteLine(word);
+            }
+            Console.ReadLine;
+                
+            //(5 points) Problem 1
+            //Using LINQ, write a method that takes in a list of strings and returns all words that contain the substring “th” from a list.
+            //List<string> stringList = new List<string>();
 
+            //public static List<string> RunProblem1(List<string> words)
+            //{
+            //    //code
+
+            //    //return
+
+            //}
 
             //Problem 2
             List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
+            List<string> 
 
 
             //Problem 3 & Problem 4

@@ -10,17 +10,36 @@ namespace PracticeProblemsLINQ
     {
         //Weighted project points: /10
         //Project points: /25
-       
+
         #region Problem 1 
         //(5 points) Problem 1
         //Using LINQ, write a method that takes in a list of strings and returns all words that contain the substring “th” from a list.
+        //List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+
         public static List<string> RunProblem1(List<string> words)
         {
+            List<string> thWords = new List<string>();
+
             //code
+            // The Three Parts of a LINQ Query:
+            // 1. Data source.
+            // input into method
+            // 2. Query creation.
+            // problem 1 is an IEnumerable<string>
 
-            //return
+            var wordsWithTh =
+                from string w in words
+                where w.Contains("th")
+                select w;
+            //3.  Query execution
+            thWords = wordsWithTh.ToList();
+            
+                //return
 
+            
+            return thWords;
         }
+      
         #endregion
 
         #region Problem 2 
