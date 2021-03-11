@@ -75,9 +75,21 @@ namespace PracticeProblemsLINQ
         //Using LINQ, write a method that takes in a list of customers and returns the lone customer who has the name of Mike. 
         public static Customer RunProblem3(List<Customer> customers)
         {
+            var qCustomers = customers.AsQueryable();
             //code
+            var mikeQuery =
+               from c in QCustomers
+                where c.FirstName.Contains("Mike")
+                select c.First();
+
+            Customer cust = mikeQuery[0];
+
+
+
+
 
             //return
+            return cust;
 
         }
         #endregion

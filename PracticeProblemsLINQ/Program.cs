@@ -53,6 +53,7 @@ namespace PracticeProblemsLINQ
             Customer returnedCustomer = LinqProblems.RunProblem3(customers);
             Console.WriteLine(returnedCustomer);
             Console.ReadLine();
+            
 
 
             //Problem 5
