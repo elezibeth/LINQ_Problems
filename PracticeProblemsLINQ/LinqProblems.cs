@@ -97,8 +97,15 @@ namespace PracticeProblemsLINQ
         public static Customer RunProblem4(List<Customer> customers)
         {
             //code
+            var idQuery3 =
+              (from c in customers
+               where c.Id == 3
+               select c).First();
 
+            idQuery3.FirstName = "Jack";
+            idQuery3.LastName = "Sprat";
             //return
+            return idQuery3;
 
         }
         #endregion
