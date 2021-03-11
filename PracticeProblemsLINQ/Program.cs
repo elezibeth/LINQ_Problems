@@ -38,7 +38,7 @@ namespace PracticeProblemsLINQ
             {
                 Console.WriteLine(i);
             }
-            Console.ReadLine;
+            
 
 
 
@@ -50,6 +50,9 @@ namespace PracticeProblemsLINQ
                 new Customer(3, "Jason", "Ryan"),
                 new Customer(4, "Dan", "Laffey")
             };
+            Customer returnedCustomer = LinqProblems.RunProblem3(customers);
+            Console.WriteLine(returnedCustomer);
+            Console.ReadLine();
 
 
             //Problem 5
