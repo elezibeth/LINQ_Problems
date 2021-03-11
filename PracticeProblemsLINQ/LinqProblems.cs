@@ -39,7 +39,7 @@ namespace PracticeProblemsLINQ
             
             return thWords;
         }
-      
+
         #endregion
 
         #region Problem 2 
@@ -48,9 +48,25 @@ namespace PracticeProblemsLINQ
         public static List<string> RunProblem2(List<string> names)
         {
             //code
+            // The Three Parts of a LINQ Query:
+            // 1. Data source.
+            //input into method;
+            List<string> noDuplicateNames = new List<string>();
+            // 2. Query creation.
+            
 
-            //return
 
+            var nameQuery2 =
+                from n in names
+                group n by names into nNames
+                where nNames.Count() > 0
+                orderby nNames.Key
+                select nNames.Key[0];
+        
+
+            // 3. Query execution.
+            noDuplicateNames = nameQuery2.ToList();
+            return noDuplicateNames;
         }
         #endregion
 
