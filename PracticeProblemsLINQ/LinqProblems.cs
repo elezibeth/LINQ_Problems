@@ -118,10 +118,43 @@ namespace PracticeProblemsLINQ
         //Expected output: 86.125
         public static double RunProblem5(List<string> classGrades)
         {
-            //code
 
+            //code
+            List<double> dGrades = new List<double>();
+
+            //-separate strings into separate lists.
+            string extractedString=ExtractNextString(classGrades, 0);
+
+            //-convert each grade to own string AND add to own list
+            var induvidualGrades =  GetIntArray(extractedString);
+            
+            //-drop lowest grade in each list
+            
+            //-get average grade from each list
+            //-average averages grades from lists
+            //-return average grade
+
+           
             //return
 
+        }
+        public static string ExtractNextString(List<string> classGrades, int index)
+        {
+            string stringToSeparate= classGrades[index];
+            
+            return stringToSeparate;
+           
+           
+        }
+        public static double[] GetIntArray(string extractedString)
+        {
+            //code
+            
+            //var nums = extractedString;
+            var indGd = extractedString.Split(',').Select(r => Convert.ToDouble(r)).ToArray();
+
+            //return
+            return indGd;
         }
         #endregion
 
