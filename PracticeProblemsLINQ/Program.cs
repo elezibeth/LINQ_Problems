@@ -17,7 +17,7 @@ namespace PracticeProblemsLINQ
             {
                 Console.WriteLine(word);
             }
-            Console.ReadLine;
+           
                 
             //(5 points) Problem 1
             //Using LINQ, write a method that takes in a list of strings and returns all words that contain the substring “th” from a list.
@@ -33,7 +33,13 @@ namespace PracticeProblemsLINQ
 
             //Problem 2
             List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
-            List<string> 
+            List<string> noDuplicateNames = LinqProblems.RunProblem2(names);
+            foreach (string i in noDuplicateNames)
+            {
+                Console.WriteLine(i);
+            }
+            Console.ReadLine;
+
 
 
             //Problem 3 & Problem 4
