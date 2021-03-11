@@ -121,22 +121,27 @@ namespace PracticeProblemsLINQ
 
             //code
             List<double> dGrades = new List<double>();
+            for(int i = 0; i <= classGrades.Count - 1; i++)
+            {
+                //-separate strings into separate lists.
+                string extractedString = ExtractNextString(classGrades, i);
+                //-convert each grade to own string AND add to own list
+                var induvidualGrades = GetIntArrayAsList(extractedString);
+                //-drop lowest grade in each list
+                //-get average grade from each list
+                //-return double average grade
+                var averageGrade = GetAverageGrade(induvidualGrades);
+                //-add returned double to list
+                dGrades.Add(averageGrade);
+            }
 
-            //-separate strings into separate lists.
-            string extractedString=ExtractNextString(classGrades, 0);
-
-            //-convert each grade to own string AND add to own list
-            var induvidualGrades =  GetIntArray(extractedString);
-            
-            //-drop lowest grade in each list
-            
-            //-get average grade from each list
             //-average averages grades from lists
+            var avgTotal = dGrades.Average();
             //-return average grade
 
-           
-            //return
 
+            //return
+            return avgTotal;
         }
         public static string ExtractNextString(List<string> classGrades, int index)
         {
@@ -146,15 +151,28 @@ namespace PracticeProblemsLINQ
            
            
         }
-        public static double[] GetIntArray(string extractedString)
+        public static List<double> GetIntArrayAsList(string extractedString)
         {
             //code
             
             //var nums = extractedString;
             var indGd = extractedString.Split(',').Select(r => Convert.ToDouble(r)).ToArray();
+            List<double> list = new List<double>();
 
+            foreach(double value in indGd)
+            {
+                list.Add(value);
+            }
             //return
-            return indGd;
+            return list ;
+        }
+        public static double GetAverageGrade(List<double> list)
+        {
+            var lowest =
+                list.Min();
+            list.Remove(lowest);
+            var avg = list.Average();
+            return avg;
         }
         #endregion
 
