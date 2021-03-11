@@ -1,0 +1,2 @@
+C:\Users\miky1\OneDrive\Desktop\PracticeProblemsLINQ\PracticeProblemsLINQ\obj\Debug\PracticeProblemsLINQ.csprojAssemblyReference.cache
+C:\Users\miky1\OneDrive\Desktop\PracticeProblemsLINQ\PracticeProblemsLINQ\obj\Debug\PracticeProblemsLINQ.csproj.CoreCompileInputs.cache
