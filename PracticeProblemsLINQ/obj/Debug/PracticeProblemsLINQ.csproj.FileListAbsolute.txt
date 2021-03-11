@@ -2,3 +2,8 @@ C:\Users\miky1\OneDrive\Desktop\PracticeProblemsLINQ\PracticeProblemsLINQ\obj\De
 C:\Users\miky1\OneDrive\Desktop\PracticeProblemsLINQ\PracticeProblemsLINQ\obj\Debug\PracticeProblemsLINQ.csproj.CoreCompileInputs.cache
 C:\Users\elezibeth\source\repos\LINQ_Problems\PracticeProblemsLINQ\obj\Debug\PracticeProblemsLINQ.csprojAssemblyReference.cache
 C:\Users\elezibeth\source\repos\LINQ_Problems\PracticeProblemsLINQ\obj\Debug\PracticeProblemsLINQ.csproj.CoreCompileInputs.cache
+C:\Users\elezibeth\source\repos\LINQ_Problems\PracticeProblemsLINQ\bin\Debug\PracticeProblemsLINQ.exe.config
+C:\Users\elezibeth\source\repos\LINQ_Problems\PracticeProblemsLINQ\bin\Debug\PracticeProblemsLINQ.exe
+C:\Users\elezibeth\source\repos\LINQ_Problems\PracticeProblemsLINQ\bin\Debug\PracticeProblemsLINQ.pdb
+C:\Users\elezibeth\source\repos\LINQ_Problems\PracticeProblemsLINQ\obj\Debug\PracticeProblemsLINQ.exe
+C:\Users\elezibeth\source\repos\LINQ_Problems\PracticeProblemsLINQ\obj\Debug\PracticeProblemsLINQ.pdb

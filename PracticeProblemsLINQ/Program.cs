@@ -52,7 +52,10 @@ namespace PracticeProblemsLINQ
             };
             Customer returnedCustomer = LinqProblems.RunProblem3(customers);
             Console.WriteLine(returnedCustomer);
-            Console.ReadLine();
+            
+            Customer returnedCustomer2 = LinqProblems.RunProblem4(customers);
+            Console.WriteLine(returnedCustomer2);
+            
             
 
 
@@ -64,11 +67,15 @@ namespace PracticeProblemsLINQ
                 "73,88,83,99,64",
                 "98,100,66,74,55"
             };
+            double average = LinqProblems.RunProblem5(classGrades);
+            Console.WriteLine(average);
+            Console.ReadLine();
 
 
             //--------------------
             //Bonus Problem 1
             string letters = "terrill";
+            Console.ReadLine();
 
         }
     }

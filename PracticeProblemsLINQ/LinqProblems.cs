@@ -180,13 +180,13 @@ namespace PracticeProblemsLINQ
         //(5 points) Bonus Problem 1
         //Write a method that takes in a string of letters(i.e. “Terrill”) 
         //and returns an alphabetically ordered string corresponding to the letter frequency(i.e. "E1I1L2R2T1")
-        public static string RunBonusProblem1(string word)
-        {
-            //code
+        //public static string RunBonusProblem1(string word)
+        //{
+        //    //code
 
-            //return
+        //    //return
 
-        }
+        //}
         #endregion
     }
 }
