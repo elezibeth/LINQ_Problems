@@ -15,7 +15,7 @@ namespace PracticeProblemsLINQ
             List<string> wordsWithTh = LinqProblems.RunProblem1(words);
             foreach(string word in wordsWithTh)
             {
-                Console.WriteLine(word);
+                Console.WriteLine($"problem 1 {word}");
             }
            
                 
@@ -36,7 +36,7 @@ namespace PracticeProblemsLINQ
             List<string> noDuplicateNames = LinqProblems.RunProblem2(names);
             foreach (string i in noDuplicateNames)
             {
-                Console.WriteLine(i);
+                Console.WriteLine($"problem 2 {i}");
             }
             
 
@@ -50,11 +50,12 @@ namespace PracticeProblemsLINQ
                 new Customer(3, "Jason", "Ryan"),
                 new Customer(4, "Dan", "Laffey")
             };
+            //problem 3
             Customer returnedCustomer = LinqProblems.RunProblem3(customers);
-            Console.WriteLine(returnedCustomer);
-            
+            Console.WriteLine($"problem 3 = {returnedCustomer.FirstName}");
+            //problem 4
             Customer returnedCustomer2 = LinqProblems.RunProblem4(customers);
-            Console.WriteLine(returnedCustomer2);
+            Console.WriteLine($"Problem 4 {returnedCustomer2.FirstName} {returnedCustomer2.LastName}");
             
             
 
@@ -68,7 +69,7 @@ namespace PracticeProblemsLINQ
                 "98,100,66,74,55"
             };
             double average = LinqProblems.RunProblem5(classGrades);
-            Console.WriteLine(average);
+            Console.WriteLine($"problem 5: {average}");
             Console.ReadLine();
 
 
