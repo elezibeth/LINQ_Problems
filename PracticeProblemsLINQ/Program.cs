@@ -56,26 +56,28 @@ namespace PracticeProblemsLINQ
             //problem 4
             Customer returnedCustomer2 = LinqProblems.RunProblem4(customers);
             Console.WriteLine($"Problem 4 {returnedCustomer2.FirstName} {returnedCustomer2.LastName}");
-            
-            
+
+
 
 
             //Problem 5
             List<string> classGrades = new List<string>()
             {
-                "80,100,92,89,65", 
+                "80,100,92,89,65",
                 "93,81,78,84,69",
                 "73,88,83,99,64",
                 "98,100,66,74,55"
             };
             double average = LinqProblems.RunProblem5(classGrades);
             Console.WriteLine($"problem 5: {average}");
-            Console.ReadLine();
 
 
-            //--------------------
-            //Bonus Problem 1
-            string letters = "terrill";
+
+            ////--------------------
+            ////Bonus Problem 1
+            //string letters = "terrill";
+            //string letters2 = LinqProblems.RunBonusProblem1(letters);
+            //Console.WriteLine($"problem bonus1; {letters2}");
             Console.ReadLine();
 
         }

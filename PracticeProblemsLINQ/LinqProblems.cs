@@ -157,12 +157,7 @@ namespace PracticeProblemsLINQ
             
             //var nums = extractedString;
             var indGd = extractedString.Split(',').Select(r => Convert.ToDouble(r)).ToArray();
-            List<double> list = new List<double>();
-
-            foreach(double value in indGd)
-            {
-                list.Add(value);
-            }
+            List<double> list = indGd.ToList();
             //return
             return list ;
         }
@@ -182,9 +177,16 @@ namespace PracticeProblemsLINQ
         //and returns an alphabetically ordered string corresponding to the letter frequency(i.e. "E1I1L2R2T1")
         //public static string RunBonusProblem1(string word)
         //{
+        //    var word2 = new char[word.Length];
         //    //code
+        //    var charFreq = 
+        //        from x in word2
+        //        where x =
 
+               
+               
         //    //return
+        //    return word3;
 
         //}
         #endregion
